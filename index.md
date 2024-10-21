@@ -1,0 +1,2 @@
+Hello Lume!
+[Blog](blog)
