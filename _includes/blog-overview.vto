@@ -6,14 +6,16 @@
     <link rel="stylesheet" href="/styles.css" />
   </head>
 
+<main>
 <h1>Jeffrey Freiwald</h1>
   <body>
     {{ content }}
 
     <ul>
       {{ for post of search.pages("post")}}
-        <a href={{post.url}}>{{post.title}}</a>
+        <li><a href={{post.url}}>{{post.title}}</a></li>
       {{/for}}
     </ul>
   </body>
+</main>
 </html>

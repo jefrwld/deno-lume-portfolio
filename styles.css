@@ -1,3 +1,7 @@
-h1 {
-    color: blue;
+main {
+    width: 60%;
+    margin: 0 auto;
+    background-color: rgb(235, 235, 235);
+    font-family: monospace;
+    padding: 10px
 }
