@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head class="home-head">
     <meta charset="UTF-8" />
     <title>{{ title }}</title>
     <link rel="stylesheet" href="/styles.css" />
@@ -9,7 +9,26 @@
 
 
   <main>
-    <h1>Jeffrey Freiwald</h1>
+    <div class="nav">
+      <h1>Jeffrey Freiwald</h1>
+      <div>
+        <span><a href="/blog">Blog</a></span>
+        <span><a href="/projects">Projects</a></span>
+      </div>
+    </div>
+
+
+    <div class="image-wrapper">
+      <div style="width: 250px; height: 250px; border: 2px solid black; margin: 0 auto; margin-top: 25px;"></div>
+    </div>
+    <div class="about-me">
+      <p>26 year old full-stack webdeveloper based in Dortmund Germany.</p>
+    </div>
+
+    <div class="interests">
+      <h2>Interests</h2>
+      <p>new technologies, computer, sports, playing guitar</p>
+    </div>
   <body>
     {{ content }}
   </body>
