@@ -1,5 +1,7 @@
 ---
 title: Creating a REST-API which receives and transforms multiple images into a single PDF
+date: 2024-10-30
+author: Jeffrey Freiwald
 ---
 
 In this tutorial, we'll create a REST API that allows users to upload images of various formats, which will then be converted into a single PDF file. We'll be using **Symfony** as our PHP framework and **Imagick** as our library for image manipulation.
