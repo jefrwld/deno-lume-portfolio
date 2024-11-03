@@ -1,11 +1,11 @@
 main {
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
-    background-color: rgb(235, 235, 235);
     font-family: monospace;
     padding: 10px;
     font-size: 16px;
     font-size: 18px;
+    height: auto;
 
 }
 
@@ -13,16 +13,27 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid red;
+    margin-bottom: 50px;
 }
 
 .about-me {
     margin: 0 auto;
-    border: 2px solid black;
-    width: fit-content;
+    width: 450px;
+    height: 250px;
+    border: 1px solid black;
     margin-top: 25px;
+    align-items: center;
 }
 
 .post-informations{
     margin-bottom: 50px
+}
+
+.image-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.interests {
+    margin-bottom: 50px;
 }
