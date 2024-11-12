@@ -16,24 +16,41 @@ main {
     margin-bottom: 50px;
 }
 
-.about-me {
-    margin: 0 auto;
-    width: 450px;
-    height: 250px;
-    border: 1px solid black;
-    margin-top: 25px;
-    align-items: center;
-}
 
 .post-informations{
     margin-bottom: 50px
 }
 
-.image-wrapper {
-    display: flex;
-    justify-content: space-between;
-}
 
 .interests {
     margin-bottom: 50px;
+}
+
+.main-content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.start-section {
+    display: flex;
+    align-items: center;
+}
+
+.about-me {
+    width: 60%;
+    object-fit: contain;
+    background-color: rgb(241, 241, 241);
+    height: fit-content;
+    padding: 10px;
+    align-items: center;
+    margin: 0 auto;
+
+}
+
+.image {
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+    margin-top: 25px;
+    object-fit: contain;
 }
