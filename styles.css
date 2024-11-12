@@ -1,5 +1,5 @@
 main {
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
     font-family: monospace;
     padding: 10px;
@@ -14,6 +14,7 @@ main {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 50px;
+    border-bottom: 4px solid black;
 }
 
 
@@ -40,7 +41,7 @@ main {
     width: 60%;
     object-fit: contain;
     background-color: rgb(241, 241, 241);
-    height: fit-content;
+    height: 100px;
     padding: 10px;
     align-items: center;
     margin: 0 auto;
@@ -53,4 +54,15 @@ main {
     object-fit: contain;
     margin-top: 25px;
     object-fit: contain;
+}
+
+.quote {
+
+    width: 60%;
+    background-color: rgb(255, 255, 255);
+    height: fit-content;
+    padding: 10px;
+    align-items: center;
+    margin: 0 auto;
+    font-style: italic;
 }
