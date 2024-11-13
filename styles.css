@@ -1,4 +1,4 @@
-main {
+.main {
     width: 60%;
     margin: 0 auto;
     font-family: monospace;
@@ -34,19 +34,16 @@ main {
 
 .start-section {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
 }
 
 .about-me {
-    width: 60%;
-    object-fit: contain;
-    background-color: rgb(241, 241, 241);
-    height: 100px;
+    width: 50%;
+    height: auto;
     padding: 10px;
     align-items: center;
-    margin: 0 auto;
-
 }
+
 
 .image {
     width: 200px;
@@ -66,3 +63,59 @@ main {
     margin: 0 auto;
     font-style: italic;
 }
+
+
+.second-section{
+    display: flex;
+    margin-top: 50px;
+}
+
+.left-block{
+    width: 50%;
+}
+
+.right-block{
+    width: 50%;
+}
+
+
+/* Mobile (480px and below) */
+@media (min-width: 480px) {
+
+
+
+    .main {
+
+        width: 100%;
+        padding: 25px;
+    }
+
+    .main-content {
+        width: 100%;
+    }
+
+    .start-section{
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .second-section {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .left-block{
+        width: 100%;
+    }
+
+    .right-block{
+        width: 100%;
+    }
+
+    .about-me {
+        width: 100%;
+    }
+
+  }

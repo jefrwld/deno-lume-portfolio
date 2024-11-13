@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head class="home-head">
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <title>{{ title }}</title>
     <link rel="stylesheet" href="/styles.css" />
   </head>
 
-  <main>
+  <div class="main">
     <div class="nav">
       <h1>Jeffrey Freiwald</h1>
       <div>
@@ -16,43 +16,53 @@
     </div>
 
 
-
     <div class='main-content'>
       <div class="start-section">
-          <img class="image" src="/004.jpg" transform-images="">
-          
-          </img>
+        <img class="image" src="/004.jpg" transform-images="">
         <div class="about-me">
-            <p>27 year old full-stack webdeveloper with a passion for learning new technologies - based in Dortmund Germany.</p>
-            <div class="quote">
-                <p>"lorem ipsum dolar lorem ipsum doalr lorem ipsum dolar"</p>
+            <h3>About me</h3>
+            <p>Hi, I’m Jeffrey, a 26-year-old Junior Fullstack Software Developer based in Dortmund, Germany. I’m passionate about learning and mastering new technologies, and constantly expanding my skill set</p>
+        </div>
+      </div>
+
+      <div class="second-section">
+        <div class="left-block">
+          <div class="interests">
+            <h2>Interests</h2>
+            <p>new technologies, computers, sports, music, art</p>
+          </div>
+
+          <div class="interests">
+            <h2>Technologies</h2>
+            <p>
+                php, typescript, angular, symfony, docker, git, vim, debian, mariadb, deno, lume
+            </p>
+          </div>
+          <div class="interests">
+            <h2>Socials</h2>
+            <ul>
+              <li><a>github</a></li> 
+              <li><a>linkedin</a></li> 
+              <li><a>xing</a></li> 
+            </ul>
+          </div>
+        </div>
+
+        <div class="right-block">
+            <div class="recent-posts">
+              <h3>My Recent Blog Post: </h3>
+              <ul>
+                {{ for post of search.pages("post").slice(0, 2) }}
+                  <li><a href="{{post.url}}">{{post.title}}</a></li>
+                {{/for}}
+              </ul>
             </div>
         </div>
       </div>
 
-      <div class="interests">
-        <h2>Interests</h2>
-        <p>new technologies, Computers, Sports, Music, Art</p>
-      </div>
 
-      <div class="interests">
-        <h2>Technologies</h2>
-        <p>
-            PHP, TypeScript, Angular, Symfony, Docker, GIT, VIM, Debian, MariaDB.
-        </p>
-      </div>
-
-
-      <div class="interests">
-      <h2>Socials</h2>
-      <ul>
-        <li><a>GitHub</a></li> 
-        <li><a>LinkedIn</a></li> 
-        <li><a>Xing</a></li> 
-      </ul>
-    </div>
   <body>
     {{ content }}
   </body>
-  </main>
+  </div>
 </html>
