@@ -17,7 +17,7 @@ In our web application users need to have the capability to upload images in dif
 ## The Solution
 
 ## Step 1: Create a new Symfony Project
-First of all we need to create a new Symfony Project following the steps from: https://symfony.com/doc/current/setup.html
+First of all we need to create a new Symfony Project
 
 ## Step 2: Defining the Controller
 Now we'll start by defining a controller that receives a `POST` request containing the uploaded files:

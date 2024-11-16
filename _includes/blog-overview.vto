@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
     <link rel="stylesheet" href="/styles.css" />
   </head>
@@ -9,7 +9,7 @@
 <div class="main">
     <div class="nav">
       <h1>Jeffrey Freiwald</h1>
-      <div>
+      <div class="nav-links">
         <span><a href="/blog">Blog</a></span>
         <span><a href="/projects">Projects</a></span>
       </div>
@@ -17,7 +17,7 @@
   <body>
     {{ content }}
 
-    <ul>
+    <ul class="blog-posts">
       {{ for post of search.pages("post")}}
         <li><a href={{post.url}}>{{post.title}}</a></li>
       {{/for}}

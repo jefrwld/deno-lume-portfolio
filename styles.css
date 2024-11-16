@@ -2,12 +2,19 @@
     width: 60%;
     margin: 0 auto;
     font-family: monospace;
-    padding: 10px;
     font-size: 16px;
     font-size: 18px;
     height: auto;
 
 }
+
+body {
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
 
 .nav {
     display: flex;
@@ -80,14 +87,10 @@
 
 
 /* Mobile (480px and below) */
-@media (min-width: 480px) {
-
-
+@media (max-width: 500px) {
 
     .main {
-
         width: 100%;
-        padding: 25px;
     }
 
     .main-content {
@@ -116,6 +119,39 @@
 
     .about-me {
         width: 100%;
+        padding: 0; 
     }
+
+    .nav h1{
+        font-size: 20px;
+    }
+
+    .nav-links {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .nav-lins a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .image {
+        margin-top: 0px;
+    }
+
+
+    /* Blog posts template mobile section */
+    .blog-posts {
+        margin-top: 50px;
+        font-size: 20px;
+
+    }
+
+    .blog-posts li {
+        padding: 10px;
+    }
+
+
 
   }
