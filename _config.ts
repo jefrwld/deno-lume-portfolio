@@ -8,6 +8,7 @@ site.use(picture(/* Options */));
 site.use(transformImages());
 site.copy("/styles.css");
 site.copy("/prism.css");
+site.copy("/004.jpg");
 
 
 site.use(prism());
