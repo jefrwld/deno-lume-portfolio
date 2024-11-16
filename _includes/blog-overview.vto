@@ -10,8 +10,8 @@
     <div class="nav">
       <h1>Jeffrey Freiwald</h1>
       <div class="nav-links">
-        <span><a href="/blog">Blog</a></span>
-        <span><a href="/projects">Projects</a></span>
+        <span><a href="blog">Blog</a></span>
+        <span><a href="projects">Projects</a></span>
       </div>
     </div>
   <body>
@@ -19,7 +19,7 @@
 
     <ul class="blog-posts">
       {{ for post of search.pages("post")}}
-        <li><a href={{post.url}}>{{post.title}}</a></li>
+        <li><a href={{base}}{{post.url}}>{{post.title}}</a></li>
       {{/for}}
     </ul>
   </body>
