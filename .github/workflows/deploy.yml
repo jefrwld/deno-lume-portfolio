@@ -22,7 +22,7 @@ jobs:
         uses: denoland/setup-deno@v2
 
       - name: Build site
-        run: deno task build  # Assumes you have a task named "build" in your deno.json
+        run: deno task build 
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -30,7 +30,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "_site"  # Your Lume build output directory (adjust if necessary)
+          path: "_site" 
 
       - name: Deploy to GitHub Pages
         id: deployment
