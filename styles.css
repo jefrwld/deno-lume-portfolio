@@ -102,7 +102,6 @@ body {
         width: 100%;
         margin: 0 auto;
         margin-bottom: 50px;
-        margin-top: 50px;
     }
 
     .second-section {
@@ -122,6 +121,7 @@ body {
     .about-me {
         width: 100%;
         padding: 0; 
+        margin-top: 50px;
     }
 
     .nav h1{
@@ -140,6 +140,7 @@ body {
 
     .image {
         margin-top: 0px;
+        margin: 0 auto;
     }
 
 
