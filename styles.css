@@ -140,7 +140,10 @@ body {
 
     .image {
         margin-top: 0px;
-        margin: 0 auto;
+    }
+
+    .image-wrapper {
+        justify-content: center;
     }
 
 
