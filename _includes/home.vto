@@ -48,7 +48,7 @@
 
         <div class="right-block">
             <div class="recent-posts">
-              <h3>My Recent Blog Posts: </h3>
+              <h2>My Recent Blog Posts: </h2>
               <ul>
                 {{ for post of search.pages("post").slice(0, 2) }}
                   <li><a href="{{post.url}}">{{post.title}}</a></li>
