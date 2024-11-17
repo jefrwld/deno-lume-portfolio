@@ -51,7 +51,7 @@
               <h2>My Recent Blog Posts: </h2>
               <ul>
                 {{ for post of search.pages("post").slice(0, 2) }}
-                  <li><a href="{{post.url}}">{{post.title}}</a></li>
+                  <li><a href="/deno-lume-portfolio/{{post.url}}">{{post.title}}</a></li>
                 {{/for}}
               </ul>
             </div>
